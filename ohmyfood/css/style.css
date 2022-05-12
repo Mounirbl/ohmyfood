@@ -16,6 +16,9 @@ body {
 
 main {
     padding: 0.7rem;
+    @media (max-width:1000px){
+        padding:0 1rem
+    }
 }
 
 header{
@@ -32,10 +35,9 @@ h2 {
     margin: 0;
 }
 
-h3
-p {
+h3 p {
     margin: 0;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 main .ville {
@@ -127,6 +129,7 @@ main .city i {
 
 .menus {
     background-color: #f6f6f6;
+    margin-bottom:2rem ;
 }
 
 .menus-cartes {
@@ -143,6 +146,7 @@ main .city i {
 .carte-description h3  {
     position: relative;
     margin: 0.5rem;
+    background-color: blue;
     
 }
 
@@ -196,4 +200,22 @@ right: 1rem;
     right: 1rem;
     top: 81%;
     
+}
+
+footer{
+    background-color:rgb(54, 52, 52);
+    padding: 0 2rem;
+    color: white;
+    
+}
+
+footer h2 {
+    font-family: "Shrikhand", "sans-serif";
+    font-weight: 500;
+    padding: 1rem 0;
+         
+}
+
+footer p {
+    padding: 0.2rem;
 }
