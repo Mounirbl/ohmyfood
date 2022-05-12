@@ -4,6 +4,10 @@
     box-sizing: border-box;
     
 }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 body {
     margin: 0px;
@@ -21,6 +25,17 @@ header{
     box-shadow:  0 0 0.5rem rgb(0 0 0/25%);
     margin: 0;
     position: relative;
+}
+
+h2 {
+    padding: 2rem 0;
+    margin: 0;
+}
+
+h3
+p {
+    margin: 0;
+    padding-top: 0.5rem;
 }
 
 main .ville {
@@ -115,19 +130,70 @@ main .city i {
 }
 
 .menus-cartes {
-    display: flex;
-    flex-wrap: wrap ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     gap: 2rem;
-    min-width: 30rem;
+    
 }
 
 .menus h2 {
     margin-bottom: 2rem;
 }
 
-.carte {
-    border: 1px solid black;
-    height: 4rem;
-    min-width: 30rem;
-    flex-grow: 1;
+.carte-description h3  {
+    position: relative;
+    margin: 0.5rem;
+    
+}
+
+.carte-image {
+    background-image: url("../images/menu-1.jpg");
+    height: 15rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-size: cover;
+    
+}
+.carte-image2 {
+    background-image:url("../images/menu-2.jpg");
+    height: 15rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-size: cover;
+}
+.carte-image3 {
+    background-image: url("../images/menu-3.jpg");
+    height: 15rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-size: cover;
+
+}
+.carte-image4 {
+    background-image: url("../images/menu-4.jpg");
+    height: 15rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-size: cover;
+
+}
+
+.new {
+    position: relative;
+}
+
+.new::before
+{content:"Nouveau" ;
+position: absolute;
+height: 2rem;
+width: 5rem;
+background-color: #99e2d0;
+display: grid;
+place-items: center;
+top:1rem;
+right: 1rem;
+}
+
+.carte-description i {
+    font-size:2rem;
+    position: absolute;
+    right: 1rem;
+    top: 81%;
+    
 }
