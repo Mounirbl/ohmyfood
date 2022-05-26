@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    padding: 0.7rem;
+    
     @media (max-width:1000px){
         padding:0 1rem
     }
@@ -84,7 +84,7 @@ main .city i {
 }
 
 .navbar button:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .fonctionnement {
@@ -143,10 +143,22 @@ main .city i {
     margin-bottom: 2rem;
 }
 
-.carte-description  {
+.carte-description   {
     position: relative;
     background-color: white;
     border-radius: 0 0 1rem 1rem;
+    padding: 10px;
+    
+}
+
+.carte-description .fa-solid:hover {
+    opacity: 1;
+    color: transparent;
+        background-image: linear-gradient(0deg, #9356dc,#ff7fda);
+        -webkit-background-clip: text;
+}
+.carte-description .fa-solid {
+    opacity: 0;
     
 }
 
@@ -198,9 +210,10 @@ right: 1rem;
     font-size:2rem;
     position: absolute;
     right: 1rem;
-    top: 81%;
-    
+    top: 67%;
 }
+
+
 
 footer{
     background-color:rgb(54, 52, 52);
