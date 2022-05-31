@@ -98,6 +98,8 @@ header {
 .menus {
   background-color: #f6f6f6;
   margin-bottom: 2rem;
+  padding: 3em;
+  margin: 0px;
 }
 
 .menus-cartes {
@@ -107,14 +109,12 @@ header {
 }
 
 .menus h2 {
-  margin-bottom: 2rem;
+  margin: 0px;
+  padding-bottom: 20px;
 }
 
 .carte-description {
   position: relative;
-  background-color: white;
-  border-radius: 0 0 1rem 1rem;
-  padding: 10px;
 }
 
 .carte-description .fa-solid:hover {
@@ -125,9 +125,10 @@ header {
 }
 
 .photo {
-  height: 10rem;
+  height: 10em;
+  width: 100%;
   border-radius: 1rem 1rem 0rem 0rem;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .new {
@@ -151,6 +152,12 @@ header {
   position: absolute;
   right: 1rem;
   top: 67%;
+}
+
+.carte {
+  background-color: white;
+  border-radius: 1em;
+  margin: 0 50px 0 50px;
 }
 
 * {

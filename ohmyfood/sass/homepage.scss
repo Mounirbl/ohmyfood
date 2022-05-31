@@ -6,12 +6,14 @@ header {
     margin: 0;
     position: relative;
 }
+
 main {
 
     @media (max-width:1000px) {
         padding: 0 1rem
     }
 }
+
 .ville {
     display: flex;
     align-items: center;
@@ -22,7 +24,7 @@ main {
     gap: 1rem;
 }
 
- .city i {
+.city i {
     font-size: 2rem;
 
 }
@@ -62,6 +64,7 @@ main {
 .navbar button:hover {
     transform: scale(1.01);
 }
+
 .fonctionnement {
     margin-bottom: 2rem;
 }
@@ -99,11 +102,15 @@ main {
 .etape i {
     color: #7e7e7e;
 }
+
 /*MENUS*/
 
 .menus {
     background-color: #f6f6f6;
     margin-bottom: 2rem;
+    padding: 3em;
+    margin: 0px;
+
 }
 
 .menus-cartes {
@@ -114,14 +121,17 @@ main {
 }
 
 .menus h2 {
-    margin-bottom: 2rem;
+    margin: 0px;
+    padding-bottom: 20px;
+
 }
+
 
 .carte-description {
     position: relative;
-    background-color: white;
-    border-radius: 0 0 1rem 1rem;
-    padding: 10px;
+
+
+
 
 }
 
@@ -133,9 +143,11 @@ main {
 }
 
 .photo {
-    height: 10rem;
+    height: 10em;
+    width: 100%;
     border-radius: 1rem 1rem 0rem 0rem;
-    background-size: cover;
+
+    object-fit: cover;
 }
 
 .new {
@@ -161,5 +173,9 @@ main {
     top: 67%;
 }
 
+.carte {
+    background-color: white;
+    border-radius: 1em;
+    margin: 0 50px 0 50px;
 
-    
+}
