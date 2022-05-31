@@ -1,234 +1,187 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-* {
-    box-sizing: border-box;
-    
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-body {
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+header {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  padding: 0.3rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  margin: 0;
+  position: relative;
 }
 
-main {
-    
-    @media (max-width:1000px){
-        padding:0 1rem
-    }
+@media (max-width: 1000px) {
+  main {
+    padding: 0 1rem;
+  }
 }
 
-header{
-    font-family: 'Shrikhand' , cursive;
-    text-align: center;
-    padding: 0.3rem;
-    box-shadow:  0 0 0.5rem rgb(0 0 0/25%);
-    margin: 0;
-    position: relative;
+.ville {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  gap: 1rem;
 }
 
-h2 {
-    padding: 2rem 0;
-    margin: 0.5rem;
-}
-
-h3 p {
-    
-    padding: 0.3rem;
-}
-
-main .ville {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem;
-    background-color: #f3f3f3;
-    text-align: center;
-    gap: 1rem;
-}
-
-main .city i {
-    font-size: 2rem;
-    
+.city i {
+  font-size: 2rem;
 }
 
 /* NAVBAR */
-
 .navbar {
-    text-align: center;
-    
+  text-align: center;
 }
 
 .navbar h2 {
-    margin-top: 2rem;
-    font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .navbar p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .navbar button {
-    color:white;
-    font-weight: 300;
-    background-image:linear-gradient(to top , rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border: none ;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 16px -3px #000000;
-    transition:  120ms;
+  color: white;
+  font-weight: 300;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 1px 16px -3px #000000;
+  transition: 120ms;
 }
 
 .navbar button:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .fonctionnement {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .etape li {
-        background-color: #f6f6f6;
-        padding: 1rem 2rem;
-        flex-grow: 1;
-        border-radius: 1rem;
-        list-style: none;
-        box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);
-        
-    
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  list-style: none;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .etape li::before {
-    content: "" counter(etape);
-    counter-increment: etape;
-    background-color: #9356dc;
-    color: white;
-    border-radius: 100%;
-    position: relative;
-    left: -14px;
-    padding: 4px 9px 4px 9px;
+  content: "" counter(etape);
+  counter-increment: etape;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 100%;
+  position: relative;
+  left: -14px;
+  padding: 4px 9px 4px 9px;
 }
 
-
 .etape {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    counter-reset: etape;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  counter-reset: etape;
 }
 
 .etape i {
-    color: #7e7e7e;
+  color: #7e7e7e;
 }
 
 /*MENUS*/
-
 .menus {
-    background-color: #f6f6f6;
-    margin-bottom:2rem ;
+  background-color: #f6f6f6;
+  margin-bottom: 2rem;
 }
 
 .menus-cartes {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
-    
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .menus h2 {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
-.carte-description   {
-    position: relative;
-    background-color: white;
-    border-radius: 0 0 1rem 1rem;
-    padding: 10px;
-    
+.carte-description {
+  position: relative;
+  background-color: white;
+  border-radius: 0 0 1rem 1rem;
+  padding: 10px;
 }
 
 .carte-description .fa-solid:hover {
-    opacity: 1;
-    color: transparent;
-        background-image: linear-gradient(0deg, #9356dc,#ff7fda);
-        -webkit-background-clip: text;
-}
-.carte-description .fa-solid {
-    opacity: 0;
-    
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356dc, #ff7fda);
+  -webkit-background-clip: text;
 }
 
-.carte-image {
-    background-image: url("../images/menu-1.jpg");
-    height: 15rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    background-size: cover;
-    
-}
-.carte-image2 {
-    background-image:url("../images/menu-2.jpg");
-    height: 15rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    background-size: cover;
-}
-.carte-image3 {
-    background-image: url("../images/menu-3.jpg");
-    height: 15rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    background-size: cover;
-
-}
-.carte-image4 {
-    background-image: url("../images/menu-4.jpg");
-    height: 15rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    background-size: cover;
-
+.photo {
+  height: 10rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  background-size: cover;
 }
 
 .new {
-    position: relative;
+  position: relative;
 }
 
-.new::before
-{content:"Nouveau" ;
-position: absolute;
-height: 2rem;
-width: 5rem;
-background-color: #99e2d0;
-display: grid;
-place-items: center;
-top:1rem;
-right: 1rem;
+.new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  display: grid;
+  place-items: center;
+  top: 1rem;
+  right: 1rem;
 }
 
 .carte-description i {
-    font-size:2rem;
-    position: absolute;
-    right: 1rem;
-    top: 67%;
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 67%;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-footer{
-    background-color:rgb(54, 52, 52);
-    padding: 0 2rem;
-    color: white;
-    
+body {
+  margin: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(54, 52, 52);
+  padding: 0 2rem;
+  color: white;
 }
 
 footer h2 {
-    font-family: "Shrikhand", "sans-serif";
-    font-weight: 500;
-    padding: 1rem 0;
-         
+  font-family: "Shrikhand";
+  font-weight: 500;
+  padding: 1rem 0;
 }
 
 footer p {
-    padding: 0.2rem;
+  padding: 0.2rem;
 }
+
+/*# sourceMappingURL=style.css.map */

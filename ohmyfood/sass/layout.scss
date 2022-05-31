@@ -1,0 +1,39 @@
+@import "./variable.scss";
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+/*Footer*/ 
+footer {
+    background-color: rgb(54, 52, 52);
+    padding: 0 2rem;
+    color: white;
+
+}
+
+footer h2 {
+    font-family: $font1;
+    font-weight: 500;
+    padding: 1rem 0;
+
+}
+
+footer p {
+    padding: 0.2rem;
+}
