@@ -22,15 +22,10 @@ main {
     background-color: #f3f3f3;
     text-align: center;
     gap: 1rem;
+    & i {
+        font-size: 2rem;
+    }
 }
-
-.city i {
-    font-size: 2rem;
-
-}
-
-
-
 
 
 /* NAVBAR */
@@ -38,18 +33,14 @@ main {
 .navbar {
     text-align: center;
 
-}
-
-.navbar h2 {
+    & h2 {
     margin-top: 2rem;
     font-size: 2rem;
 }
-
-.navbar p {
+    & p {
     font-size: 1rem;
 }
-
-.navbar button {
+    & button {
     color: white;
     font-weight: 300;
     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
@@ -57,50 +48,49 @@ main {
     padding: 1rem 2rem;
     border: none;
     border-radius: 2rem;
-    box-shadow: 2px 1px 16px -3px #000000;
+    box-shadow: 2px 1px 16px -3px rgb(0 0 0/25%);
     transition: 120ms;
-}
+    &:hover {
+        transform: scale(1.01);
+        box-shadow: 2px 1px 16px -3px rgb(0 0 0/100%);
 
-.navbar button:hover {
-    transform: scale(1.01);
+    }
+}
 }
 
 .fonctionnement {
     margin-bottom: 2rem;
 }
 
-.etape li {
-    background-color: #f6f6f6;
-    padding: 1rem 2rem;
-    flex-grow: 1;
-    border-radius: 1rem;
-    list-style: none;
-    box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);
-
-
-}
-
-.etape li::before {
-    content: "" counter(etape);
-    counter-increment: etape;
-    background-color: #9356dc;
-    color: white;
-    border-radius: 100%;
-    position: relative;
-    left: -14px;
-    padding: 4px 9px 4px 9px;
-}
-
-
 .etape {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
     counter-reset: etape;
-}
 
-.etape i {
-    color: #7e7e7e;
+    & li {
+        background-color: #f6f6f6;
+        padding: 1rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        list-style: none;
+        box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);
+            
+        &::before {
+            content: "" counter(etape);
+            counter-increment: etape;
+            background-color: #9356dc;
+            color: white;
+            border-radius: 100%;
+            position: relative;
+            left: -14px;
+            padding: 4px 9px 4px 9px;
+                    }
+            }
+    
+    & i {
+        color: #7e7e7e;
+    }
 }
 
 /*MENUS*/
@@ -110,9 +100,11 @@ main {
     margin-bottom: 2rem;
     padding: 3em;
     margin: 0px;
-
+    & h2 {
+        margin: 0px;
+        padding-bottom: 20px;
+    }
 }
-
 .menus-cartes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -120,19 +112,8 @@ main {
 
 }
 
-.menus h2 {
-    margin: 0px;
-    padding-bottom: 20px;
-
-}
-
-
 .carte-description {
     position: relative;
-
-
-
-
 }
 
 .carte-description .fa-solid:hover {
@@ -141,29 +122,37 @@ main {
     background-image: linear-gradient(0deg, #9356dc, #ff7fda);
     -webkit-background-clip: text;
 }
+.fa-solid {
+    opacity: 0;
+}
+.fa-regular {
+    opacity: 1;
+    &:hover {
+        opacity: 0;
+    }
+
+}
 
 .photo {
     height: 10em;
     width: 100%;
     border-radius: 1rem 1rem 0rem 0rem;
-
     object-fit: cover;
 }
 
 .new {
     position: relative;
-}
-
-.new::before {
-    content: "Nouveau";
-    position: absolute;
-    height: 2rem;
-    width: 5rem;
-    background-color: #99e2d0;
-    display: grid;
-    place-items: center;
-    top: 1rem;
-    right: 1rem;
+    &::before {
+        content: "Nouveau";
+            position: absolute;
+            height: 2rem;
+            width: 5rem;
+            background-color: #99e2d0;
+            display: grid;
+            place-items: center;
+            top: 1rem;
+            right: 1rem;
+    }
 }
 
 .carte-description i {
@@ -177,5 +166,4 @@ main {
     background-color: white;
     border-radius: 1em;
     margin: 0 50px 0 50px;
-
 }
