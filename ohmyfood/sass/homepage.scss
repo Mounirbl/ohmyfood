@@ -116,16 +116,16 @@ main {
     position: relative;
 }
 
-.carte-description .fa-solid:hover {
+.carte-description .fa-solid:hover  {
     opacity: 1;
     color: transparent;
     background-image: linear-gradient(0deg, #9356dc, #ff7fda);
     -webkit-background-clip: text;
 }
-.fa-solid {
+.carte-description .fa-solid {
     opacity: 0;
 }
-.fa-regular {
+.carte-description .fa-regular  {
     opacity: 1;
     &:hover {
         opacity: 0;

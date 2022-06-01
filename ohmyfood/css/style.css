@@ -116,14 +116,14 @@ header {
   -webkit-background-clip: text;
 }
 
-.fa-solid {
+.carte-description .fa-solid {
   opacity: 0;
 }
 
-.fa-regular {
+.carte-description .fa-regular {
   opacity: 1;
 }
-.fa-regular:hover {
+.carte-description .fa-regular:hover {
   opacity: 0;
 }
 
