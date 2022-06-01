@@ -3,10 +3,14 @@
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
-  padding: 0.3rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  margin: 0;
+  margin: -21px;
   position: relative;
+}
+header h1 {
+  padding: 18px 0 10px 0;
+  margin: 10px;
+  font-size: 31px;
 }
 
 @media (max-width: 1000px) {
@@ -23,9 +27,11 @@ header {
   background-color: #f3f3f3;
   text-align: center;
   gap: 1rem;
+  font-size: 12px;
+  margin-top: 21px;
 }
 .ville i {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 /* NAVBAR */
@@ -34,7 +40,7 @@ header {
 }
 .navbar h2 {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 .navbar p {
   font-size: 1rem;
@@ -56,7 +62,10 @@ header {
 }
 
 .fonctionnement {
-  margin-bottom: 2rem;
+  margin-bottom: 25px;
+  padding-left: 100px;
+  font-size: 12px;
+  padding-right: 100px;
 }
 
 .etape {
@@ -64,6 +73,8 @@ header {
   gap: 1rem;
   flex-wrap: wrap;
   counter-reset: etape;
+  padding-left: 1px;
+  font-weight: bold;
 }
 .etape li {
   background-color: #f6f6f6;
@@ -85,6 +96,7 @@ header {
 }
 .etape i {
   color: #7e7e7e;
+  padding-right: 10px;
 }
 
 /*MENUS*/
@@ -97,6 +109,8 @@ header {
 .menus h2 {
   margin: 0px;
   padding-bottom: 20px;
+  padding-left: 54px;
+  font-size: 20px;
 }
 
 .menus-cartes {
@@ -107,6 +121,7 @@ header {
 
 .carte-description {
   position: relative;
+  padding-left: 17px;
 }
 
 .carte-description .fa-solid:hover {
@@ -143,6 +158,7 @@ header {
   height: 2rem;
   width: 5rem;
   background-color: #99e2d0;
+  color: #008766;
   display: grid;
   place-items: center;
   top: 1rem;
@@ -153,7 +169,7 @@ header {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  top: 67%;
+  top: 29%;
 }
 
 .carte {
@@ -191,6 +207,8 @@ footer h2 {
 
 footer p {
   padding: 0.2rem;
+  margin: 0px;
+  padding-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
