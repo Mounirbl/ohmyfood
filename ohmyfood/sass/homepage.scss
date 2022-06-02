@@ -99,17 +99,36 @@ main {
             position: relative;
             left: -14px;
             padding: 4px 9px 4px 9px;
-            
-                    }
-            }
-    
-    & i {
+        }
+        
+         & i {
         color: #7e7e7e;
-        padding-right: 10px;
+        padding-right: 10px;}
         
         
     }
 }
+
+.etape li:hover {
+    background-color: #f5edff;
+}
+
+.etape li:hover .fa-solid {
+    color: #9356dc;
+}
+
+@media (max-width:1024px) {
+    .etape {
+      flex-direction: column;  
+    }
+    
+}
+
+
+
+
+
+
 
 /*MENUS*/
 
@@ -132,6 +151,11 @@ main {
 
 }
 
+@media (max-width:1024px) {
+.menus-cartes {
+    grid-template-columns: repeat(1,4fr);
+}
+}
 .carte-description {
     position: relative;
     padding-left: 17px;
@@ -181,7 +205,7 @@ main {
 .carte-description i {
     font-size: 2rem;
     position: absolute;
-    right: 1rem;
+    right: 1rem; 
     top: 29%;
 }
 
@@ -189,4 +213,4 @@ main {
     background-color: white;
     border-radius: 1em;
     margin: 0 50px 0 50px;
-}
+ }
