@@ -1,0 +1,27 @@
+img {
+    max-width: 100%;
+}
+
+main h2 {
+    position: relative;
+    font-family: $font1;
+    .carte-description .fa-solid:hover {
+            opacity: 1;
+            color: transparent;
+            background-image: linear-gradient(0deg, #9356dc, #ff7fda);
+            -webkit-background-clip: text;
+        }
+    
+        .carte-description .fa-solid {
+            opacity: 0;
+        }
+    
+        .carte-description .fa-regular {
+            opacity: 1;
+    
+            &:hover {
+                opacity: 0;
+            }
+    
+        }
+}

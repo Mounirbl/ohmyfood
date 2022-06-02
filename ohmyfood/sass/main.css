@@ -174,7 +174,8 @@ header h1 {
   height: 10em;
   width: 100%;
   border-radius: 1rem 1rem 0rem 0rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .new {
@@ -256,29 +257,4 @@ footer p {
     gap: 0.5rem;
     padding-left: 30px;
   }
-}
-img {
-  max-width: 100%;
-}
-
-main h2 {
-  position: relative;
-  font-family: "Shrikhand";
-}
-main h2 .carte-description .fa-solid:hover {
-  opacity: 1;
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356dc, #ff7fda);
-  -webkit-background-clip: text;
-}
-main h2 .carte-description .fa-solid {
-  opacity: 0;
-}
-main h2 .carte-description .fa-regular {
-  opacity: 1;
-}
-main h2 .carte-description .fa-regular:hover {
-  opacity: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */
