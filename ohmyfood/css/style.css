@@ -220,6 +220,21 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  padding: 0 7rem;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  padding: 0;
+  margin: 0;
+}
+
 /*Footer*/
 footer {
   background-color: rgb(54, 52, 52);
@@ -257,28 +272,93 @@ footer p {
     padding-left: 30px;
   }
 }
-img {
-  max-width: 100%;
+body {
+  background-color: white;
 }
 
-main h2 {
-  position: relative;
-  font-family: "Shrikhand";
+#page-resto .banniere img {
+  width: 100%;
+  height: 70vh;
+  object-fit: fill;
+  object-position: bottom;
 }
-main h2 .carte-description .fa-solid:hover {
+#page-resto .absolute {
+  margin-top: -8rem;
+  background: white;
+  position: relative;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+#page-resto .absolute h2 {
+  padding-top: 31px;
+  font-family: "Shrikhand";
+  margin-left: 25px;
+}
+#page-resto main h2 {
+  font-family: "Shrikhand";
+  margin-left: 25px;
+}
+#page-resto .heart {
+  position: relative;
+}
+#page-resto .heart i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 28px;
+}
+#page-resto .heart .fa-solid {
+  opacity: 0;
+}
+#page-resto .heart .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-image: linear-gradient(0deg, #9356dc, #ff7fda);
   -webkit-background-clip: text;
 }
-main h2 .carte-description .fa-solid {
-  opacity: 0;
-}
-main h2 .carte-description .fa-regular {
+#page-resto .heart .fa-regular {
   opacity: 1;
 }
-main h2 .carte-description .fa-regular:hover {
+#page-resto .heart .fa-regular:hover {
   opacity: 0;
+}
+#page-resto .menus-grid {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: -20px;
+}
+@media (max-width: 1000px) {
+  #page-resto .menus-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#page-resto .menus-grid > * {
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 1rem;
+}
+#page-resto .menus-grid > * .menu-offre {
+  display: flex;
+}
+#page-resto .menus-grid > * .menu-offre .prix {
+  margin-left: auto;
+  font-weight: 900;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+#page-resto .menus-grid > * .menu-offre .menu-offre {
+  padding: 1rem;
+}
+#page-resto .menus-grid > * .menu-offre .menu-checkmark {
+  background-color: #99e2d0;
+}
+#page-resto .menus-grid > * .menu-offre > * {
+  border: 1px solid;
+}
+#page-resto .menus-grid .resto-titre {
+  padding: 0 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
