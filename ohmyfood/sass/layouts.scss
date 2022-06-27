@@ -49,7 +49,7 @@ main {
 }
 
 
-.txtfooter {
+.textefooter {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -79,7 +79,7 @@ main {
     }
 }
 
-.pad {
+.padd {
 
     @include breakpoint-mobile {
         padding-right: 6px

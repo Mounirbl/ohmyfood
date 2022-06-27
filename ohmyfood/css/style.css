@@ -55,7 +55,7 @@ main {
   }
 }
 
-.txtfooter {
+.textefooter {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -63,18 +63,18 @@ main {
   flex-wrap: wrap;
   font-family: "Roboto";
 }
-.txtfooter a {
+.textefooter a {
   color: inherit;
   text-decoration: none;
 }
-.txtfooter li {
+.textefooter li {
   color: white;
 }
-.txtfooter i {
+.textefooter i {
   padding-right: 10px;
 }
 @media (max-width: 768px) {
-  .txtfooter {
+  .textefooter {
     flex-direction: column;
     gap: 0.5em;
     padding-left: 30px;
@@ -82,7 +82,7 @@ main {
 }
 
 @media (max-width: 768px) {
-  .pad {
+  .padd {
     padding-right: 6px;
   }
 }
@@ -151,19 +151,19 @@ main {
 }
 
 /*Nav Bar */
-.explorer {
+.navbar {
   font-family: "Roboto";
   text-align: center;
   background-color: #fafafa;
   padding: 20px;
 }
-.explorer h3 {
+.navbar h3 {
   font-size: 25px;
 }
-.explorer p {
+.navbar p {
   font-weight: 200;
 }
-.explorer button {
+.navbar button {
   font-size: 18px;
   padding: 13px 25px 13px 25px;
   border-radius: 100px;
@@ -174,7 +174,7 @@ main {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
   transition-duration: 0.25s;
 }
-.explorer button:hover {
+.navbar button:hover {
   opacity: 0.9;
   cursor: pointer;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.75);
@@ -192,13 +192,13 @@ main {
   }
 }
 
-.step {
+.etape {
   display: flex;
   gap: 40px;
   padding: 0px 100px 0px 100px;
   counter-reset: tuto;
 }
-.step li {
+.etape li {
   background-color: #f6f6f6;
   padding: 25px 25px 25px 0px;
   flex-grow: 1;
@@ -206,7 +206,7 @@ main {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
   list-style: none;
 }
-.step li:before {
+.etape li:before {
   content: "" counter(tuto);
   counter-increment: tuto;
   background-color: #9356DC;
@@ -216,23 +216,23 @@ main {
   position: relative;
   left: -14px;
 }
-.step li:hover {
+.etape li:hover {
   background-color: #f5edff;
 }
-.step li:hover .fa-solid {
+.etape li:hover .fa-solid {
   color: #9356DC;
 }
-.step i {
+.etape i {
   color: #7e7e7e;
   padding-right: 10px;
 }
 @media (max-width: 1024px) {
-  .step {
+  .etape {
     flex-direction: column;
   }
 }
 @media (max-width: 768px) {
-  .step {
+  .etape {
     padding: 0px 30px 0px 30px;
   }
 }
