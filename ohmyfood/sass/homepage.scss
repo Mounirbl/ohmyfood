@@ -1,229 +1,261 @@
+@import "./mixins.scss";
+@import "./variables.scss";
 
-
-
-header {
-    font-family: 'Shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0 0 0/25%);
-    margin: -21px;
-    position: relative;
-
-    & h1 {
-            padding: 18px 0 10px 0;
-            margin: 10px;
-            font-size: 31px;
-        }
+/*Loader*/
+.loader {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.90);
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    animation: loader 3s ;
 }
 
-main {
+.wrapper {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
-    @media (max-width:1000px) {
-        padding: 0 1rem
+.circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: $purple-primary;
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle .5s alternate infinite ease;
+
+    &:nth-child(2) {
+        left: 35%;
+        background-color: $pink-secondary ;
+        animation-delay: .2s;
+    }
+
+    &:nth-child(3) {
+        left: auto;
+        background-color: $green-tertiary;
+        right: 35%;
+        animation-delay: .3s;
     }
 }
 
+/*Lieu*/
 
-.ville {
+.lieu {
     display: flex;
-    align-items: center;
+    font-family: $font-2;
     justify-content: center;
-    padding: 0.5rem;
-    background-color: #f3f3f3;
-    text-align: center;
-    gap: 1rem;
-    font-size: 12px;
-    margin-top: 21px;
-    & i {
-        font-size: 1rem;
-    }
-}
-
-
-/* NAVBAR */
-
-.navbar {
-    text-align: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    margin: 0px;
+    background-color: #f2f2f2;
 
     & h2 {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-}
-    & p {
-    font-size: 1rem;
-}
-    & button {
-    color: white;
-    font-weight: 300;
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-    font-size: 14px;
-    padding: 12px 16px;
-    border: none;
-    border-radius: 2rem;
-    box-shadow: 2px 1px 16px -3px rgb(0 0 0/25%);
-    transition: 120ms;
-    &:hover {
-        transform: scale(1.01);
-        box-shadow: 2px 1px 16px -3px rgb(0 0 0/100%);
+
+        font-size: 19px;
+    }
+
+    & i {
+
+        font-size: 20px;
+        padding-right: 20px;
 
     }
 }
+
+/*Nav Bar */
+
+.explorer {
+
+    font-family: $font-2;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 20px;
+
+    & h3 {
+
+        font-size: 25px;
+    }
+
+    & p {
+
+        font-weight: 200;
+    }
+
+    @include button;
 }
 
-.fonctionnement {
-    margin-bottom: 25px;
+/*Fonctionnement*/
+
+.fonction h3 {
+
     padding-left: 100px;
-    font-size: 12px;
-    padding-right: 100px;
+    font-size: 25px;
+    margin-bottom: 25px;
 
+    @include break-mobile {
+
+        padding: 0px 30px 0px 30px;
+
+    }
 }
 
-.etape {
+.step {
+
     display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    counter-reset: etape;
-    padding-left: 1px;
-    font-weight: bold;
+    gap: 40px;
+    padding: 0px 100px 0px 100px;
+    counter-reset: tuto;
 
     & li {
+
         background-color: #f6f6f6;
-        padding: 1rem 2rem;
+        padding: 25px 25px 25px 0px;
         flex-grow: 1;
-        border-radius: 1rem;
-        list-style: none;
+        border-radius: 20px;
         box-shadow: 3px 3px 8px rgb(0 0 0 / 15%);
-            
-        &::before {
-            content: "" counter(etape);
-            counter-increment: etape;
-            background-color: #9356dc;
+        list-style: none;
+
+        &:before {
+
+            content: "" counter(tuto);
+            counter-increment: tuto;
+            background-color: $purple-primary ;
             color: white;
+            padding: 4px 9px 4px 9px;
             border-radius: 100%;
             position: relative;
             left: -14px;
-            padding: 4px 9px 4px 9px;
         }
-        
-         & i {
+
+        &:hover {
+
+            background-color: #f5edff;
+
+            & .fa-solid {
+
+                color: $purple-primary;
+            }
+        }
+    }
+
+    & i {
+
         color: #7e7e7e;
-        padding-right: 10px;}
-        
-        
+        padding-right: 10px
+    }
+
+    @include break-tablet {
+
+        flex-direction: column;
+    }
+
+    @include break-mobile {
+
+        padding: 0px 30px 0px 30px
     }
 }
 
-.etape li:hover {
-    background-color: #f5edff;
+.step_texte {
+
+    font-weight: bold;
+    font-size: 15px;
+
 }
 
-.etape li:hover .fa-solid {
-    color: #9356dc;
-}
+/*Listes des Restaurants*/
+/*Restaurants*/
 
-@media (max-width:1024px) {
-    .etape {
-      flex-direction: column;  
-    }
-    
-}
-@media (max-width:768px) {
-    .etape {
-        padding: 0px 30px 0px 30px;
-    }
-}
+.restaurants {
 
-
-
-
-
-
-/*MENUS*/
-
-.menus {
     background-color: #f6f6f6;
-    margin-bottom: 2rem;
-    padding: 3em;
-    margin: 0px;
-    & h2 {
-        margin: 0px;
-        padding-bottom: 20px;
-        padding-left: 54px;
-        font-size: 20px;
+    padding: 0px 100px 50px 100px;
+
+    & h3 {
+
+        font-size: 25px;
+        padding-top: 25px;
+    }
+
+    @include break-mobile {
+
+        padding: 0px 30px 50px 30px;
+
     }
 }
 
-@media (max-width:768px) {
-    .menus-cartes {
-        padding: 0px 30px 50px 30px;
-    }
-}
-.menus-cartes {
+.full-cartes {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2em;
 
-}
+    & a {
 
-@media (max-width:1024px) {
-.menus-cartes {
-    grid-template-columns: repeat(1,4fr);
-}
-}
-.carte-description {
-    position: relative;
-    padding-left: 17px;
-}
-
-.carte-description .fa-solid:hover  {
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(0deg, #9356dc, #ff7fda);
-    -webkit-background-clip: text;
-}
-.carte-description .fa-solid {
-    opacity: 0;
-}
-.carte-description .fa-regular  {
-    opacity: 1;
-    &:hover {
-        opacity: 0;
+        color: inherit;
+        text-decoration: none;
     }
 
+    @include break-tablet {
+
+        grid-template-columns: repeat(1, 4fr);
+    }
 }
 
-.photo {
-    height: 10em;
-    width: 100%;
-    border-radius: 1rem 1rem 0rem 0rem;
-    object-fit: cover;
+
+.carte {
+    row-gap: 2em;
+    gap: 2em;
+    background-color: white;
+    border-radius: 1em;
+
+    & img {
+
+        height: 12em;
+        width: 100%;
+        border: 0px solid transparent;
+        border-radius: 1em 1em 0 0;
+        object-fit: cover;
+    }
+}
+
+.carte-texte {
+
+    padding-left: 20px;
+    position: relative;
+
+    & h4 {
+
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    & p {
+
+        margin-top: 8px
+    }
+
+    @include heart-like;
 }
 
 .new {
+
     position: relative;
-    &::before {
+
+    &:before {
+
         content: "Nouveau";
-            position: absolute;
-            height: 2rem;
-            width: 5rem;
-            background-color: #99e2d0;
-            color: #008766;
-            display: grid;
-            place-items: center;
-            top: 1rem;
-            right: 1rem;
-            
+        background-color: $green-tertiary;
+        color: #008766;
+        border-radius: 0.2em;
+        padding: 7px 14px 7px 14px;
+        position: absolute;
+        right: 16px;
+        top: 16px;
     }
 }
-
-.carte-description i {
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem; 
-    top: 29%;
-}
-
-.carte {
-    background-color: white;
-    border-radius: 1em;
-    margin: 0 50px 0 50px;
- }
