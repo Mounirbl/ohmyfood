@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Button*/
-/*Animation Heart*/
+/*Heart Animation*/
 /*Header Logo*/
 /*Brekpoint*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
@@ -88,17 +88,17 @@ main {
 }
 
 /*Button*/
-/*Animation Heart*/
+/*Heart Animation*/
 /*Header Logo*/
 /*Brekpoint*/
 /*Loader*/
-.loader {
+.loading {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   inset: 0;
   z-index: 1;
-  animation: loader 3s;
+  animation: loader 2.5s both;
 }
 
 .wrapper {
@@ -110,7 +110,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.circle {
+.cercle {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -120,20 +120,20 @@ main {
   transform-origin: 50%;
   animation: circle 0.5s alternate infinite ease;
 }
-.circle:nth-child(2) {
+.cercle:nth-child(2) {
   left: 35%;
   background-color: #FF79DA;
   animation-delay: 0.2s;
 }
-.circle:nth-child(3) {
+.cercle:nth-child(3) {
   left: auto;
   background-color: #99E2D0;
   right: 35%;
   animation-delay: 0.3s;
 }
 
-/*Lieu*/
-.lieu {
+/*Localisation*/
+.Localisation {
   display: flex;
   font-family: "Roboto";
   justify-content: center;
@@ -142,10 +142,10 @@ main {
   margin: 0px;
   background-color: #f2f2f2;
 }
-.lieu h2 {
+.Localisation h2 {
   font-size: 19px;
 }
-.lieu i {
+.Localisation i {
   font-size: 20px;
   padding-right: 20px;
 }
@@ -333,7 +333,7 @@ main {
 }
 
 /*Button*/
-/*Animation Heart*/
+/*Heart Animation*/
 /*Header Logo*/
 /*Brekpoint*/
 /*La palette du Goût*/
@@ -416,13 +416,13 @@ main {
   cursor: pointer;
 }
 
-.menu-list {
+.liste-menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3em;
 }
 @media (max-width: 1024px) {
-  .menu-list {
+  .liste-menu {
     grid-template-columns: 1fr;
   }
 }
@@ -616,13 +616,16 @@ main {
     transform: translateY(50px);
     opacity: 0;
   }
+  50% {
+    transform: translateY(25px);
+  }
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
 /*Button*/
-/*Animation Heart*/
+/*Heart Animation*/
 /*Header Logo*/
 /*Brekpoint*/
 

@@ -2,13 +2,13 @@
 @import "./variables.scss";
 
 /*Loader*/
-.loader {
+.loading {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.90);
     position: fixed;
     inset: 0;
     z-index: 1;
-    animation: loader 3s ;
+    animation: loader 2.5s both ;
 }
 
 .wrapper {
@@ -20,7 +20,7 @@
     transform: translate(-50%, -50%);
 }
 
-.circle {
+.cercle {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -28,25 +28,25 @@
     background-color: $purple-primary;
     left: 15%;
     transform-origin: 50%;
-    animation: circle .5s alternate infinite ease;
+    animation: circle 0.5s alternate infinite ease;
 
     &:nth-child(2) {
         left: 35%;
         background-color: $pink-secondary ;
-        animation-delay: .2s;
+        animation-delay: 0.2s;
     }
 
     &:nth-child(3) {
         left: auto;
         background-color: $green-tertiary;
         right: 35%;
-        animation-delay: .3s;
+        animation-delay: 0.3s;
     }
 }
 
-/*Lieu*/
+/*Localisation*/
 
-.lieu {
+.Localisation {
     display: flex;
     font-family: $font-2;
     justify-content: center;
@@ -98,7 +98,7 @@
     font-size: 25px;
     margin-bottom: 25px;
 
-    @include break-mobile {
+    @include breakpoint-mobile {
 
         padding: 0px 30px 0px 30px;
 
@@ -150,12 +150,12 @@
         padding-right: 10px
     }
 
-    @include break-tablet {
+    @include breakpoint-tablette {
 
         flex-direction: column;
     }
 
-    @include break-mobile {
+    @include breakpoint-mobile {
 
         padding: 0px 30px 0px 30px
     }
@@ -182,7 +182,7 @@
         padding-top: 25px;
     }
 
-    @include break-mobile {
+    @include breakpoint-mobile {
 
         padding: 0px 30px 50px 30px;
 
@@ -201,7 +201,7 @@
         text-decoration: none;
     }
 
-    @include break-tablet {
+    @include breakpoint-tablette {
 
         grid-template-columns: repeat(1, 4fr);
     }

@@ -37,6 +37,10 @@
         opacity: 0;
     }
 
+    50% {
+        transform: translateY(25px);
+    }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
