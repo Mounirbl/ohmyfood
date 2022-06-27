@@ -141,14 +141,14 @@
             margin-right: 0;
         }
 
-        .menu-icon {
+        .menu-icone {
 
             transform: rotate(0);
         }
     }
 }
 
-.menu-txt {
+.menu-texte {
 
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -186,7 +186,7 @@
     align-items: flex-end;
 }
 
-.menu-icon {
+.menu-icone {
 
     display: flex;
     height: 25px;
@@ -217,16 +217,16 @@
     transition-duration: 500ms;
 }
 
-/*Delay*/
+/*Delai*/
 @for $i from 0 to 9 {
-    .delay-#{$i} {
-        animation-delay: .1s * $i;
+    .delai-#{$i} {
+        animation-delay: 0.5s * $i;
     }
 }
 
 /*Bouton Commander*/
 
-.button-flex {
+.bouton-flex {
 
     margin: 50px 0px 20px 0px;
     display: flex;
