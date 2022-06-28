@@ -150,7 +150,7 @@ main {
   padding-right: 20px;
 }
 
-/*Nav Bar */
+/*NavBar */
 .navbar {
   font-family: "Roboto";
   text-align: center;
@@ -181,13 +181,13 @@ main {
 }
 
 /*Fonctionnement*/
-.fonction h3 {
+.fonctionnement h3 {
   padding-left: 100px;
   font-size: 25px;
   margin-bottom: 25px;
 }
 @media (max-width: 768px) {
-  .fonction h3 {
+  .fonctionnement h3 {
     padding: 0px 30px 0px 30px;
   }
 }
