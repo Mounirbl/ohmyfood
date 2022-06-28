@@ -4,7 +4,7 @@
 
 /*La palette du Goût*/
 
-.restaurant-bg {
+.restaurant-background {
 
     @include logo;
 
@@ -30,7 +30,7 @@
     }
 }
 
-.image-bg {
+.image-background {
 
 
     width: 100%;
@@ -56,14 +56,14 @@
     }
 }
 
-.menu-title h2 {
+.menu-titre h2 {
 
     font-family: $font-1;
     padding-left: 16px;
 
 }
 
-.menu-title {
+.menu-titre {
 
     position: relative;
 

@@ -237,7 +237,7 @@ main {
   }
 }
 
-.step_texte {
+.etape_texte {
   font-weight: bold;
   font-size: 15px;
 }
@@ -318,10 +318,10 @@ main {
   cursor: pointer;
 }
 
-.new {
+.nouveau {
   position: relative;
 }
-.new:before {
+.nouveau:before {
   content: "Nouveau";
   background-color: #99E2D0;
   color: #008766;
@@ -337,33 +337,33 @@ main {
 /*Header Logo*/
 /*Brekpoint*/
 /*La palette du Goût*/
-.restaurant-bg {
+.restaurant-background {
   position: relative;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
-.restaurant-bg h1 {
+.restaurant-background h1 {
   font-family: "Shrikhand";
   margin: 0px;
   padding: 10px 0 10px 0;
   text-align: center;
 }
-.restaurant-bg i {
+.restaurant-background i {
   position: absolute;
   left: 30px;
   top: 22px;
   cursor: pointer;
 }
-.restaurant-bg a {
+.restaurant-background a {
   color: black;
   text-decoration: underline;
   cursor: pointer;
   font-size: 25px;
 }
-.restaurant-bg a :hover {
+.restaurant-background a :hover {
   cursor: pointer;
 }
 
-.image-bg {
+.image-background {
   width: 100%;
   object-fit: cover;
   height: 32em;
@@ -384,28 +384,28 @@ main {
   }
 }
 
-.menu-title h2 {
+.menu-titre h2 {
   font-family: "Shrikhand";
   padding-left: 16px;
 }
 
-.menu-title {
+.menu-titre {
   position: relative;
 }
-.menu-title h2 {
+.menu-titre h2 {
   font-family: "Shrikhand";
   padding-left: 16px;
 }
-.menu-title i {
+.menu-titre i {
   font-size: 35px;
   position: absolute;
   right: 16px;
   top: 0px;
 }
-.menu-title .fa-solid {
+.menu-titre .fa-solid {
   opacity: 0;
 }
-.menu-title .fa-solid:hover {
+.menu-titre .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
